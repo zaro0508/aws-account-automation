@@ -274,18 +274,18 @@ Outputs:
     Condition: cDeploySMSAlerts
     Value: !Ref 'SNSAlertsNigthmare'
     Export:
-      Name: SNSAlertsNigthmare
+      Name: !Sub '${AWS::Region}-${AWS::StackName}-SNSAlertsNigthmare'
   SNSAlertsCriticalArn:
     Value: !Ref 'SNSAlertsCritical'
     Export:
-      Name: SNSAlertsCriticalArn
+      Name: !Sub '${AWS::Region}-${AWS::StackName}-SNSAlertsCriticalArn'
   SNSAlertsErrorArn:
     Value: !Ref 'SNSAlertsError'
     Export:
-      Name: SNSAlertsErrorArn
+      Name: !Sub '${AWS::Region}-${AWS::StackName}-SNSAlertsErrorArn'
   SNSAlertsInfoArn:
     Value: !Ref 'SNSAlertsInfo'
     Export:
-      Name: SNSAlertsInfoArn
+      Name: !Sub '${AWS::Region}-${AWS::StackName}-SNSAlertsInfoArn'
   TemplateVersion:
     Value: "0.1.0"

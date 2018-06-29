@@ -419,12 +419,12 @@ Outputs:
   SNSAlertsCritical:
     Value: !Ref 'SNSAlertsCritical'
     Export:
-      Name: CloudWatchAlarmRawTopic-Critical
+      Name: !Sub '${AWS::Region}-${AWS::StackName}-CloudWatchAlarmRawTopic-Critical'
   SNSAlertsError:
     Value: !Ref 'SNSAlertsError'
     Export:
-      Name: CloudWatchAlarmRawTopic-Error
+      Name: !Sub '${AWS::Region}-${AWS::StackName}-CloudWatchAlarmRawTopic-Error'
   SNSAlertsInfo:
     Value: !Ref 'SNSAlertsInfo'
     Export:
-      Name: CloudWatchAlarmRawTopic-Info
+      Name: !Sub '${AWS::Region}-${AWS::StackName}-CloudWatchAlarmRawTopic-Info'
