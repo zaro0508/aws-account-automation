@@ -13,10 +13,10 @@ Parameters:
   pEnableSubscriberSMS:
     Description: Enable SMS notification of critical alerts
     Type: String
-    Default: yes
+    Default: true
     AllowedValues:
-    - yes
-    - "no"
+      - true
+      - false
 
   pInitialSubscriberSMS:
     Description: Add this initial Cell for SMS notification of critical alerts
@@ -31,8 +31,8 @@ Parameters:
     Description: Whether or not to deploy the slack lambda
     Type: String
     AllowedValues:
-    - yes
-    - "no"
+      - true
+      - false
 
   pLambdaFunctionName:
     Description: Name of the Lambda Function
