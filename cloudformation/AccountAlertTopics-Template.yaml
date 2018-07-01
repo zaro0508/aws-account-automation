@@ -56,9 +56,9 @@ Parameters:
 
 Conditions:
   cDeployLambda:
-    !Equals [ !Ref pDeployLambda, yes]
+    !Equals [ !Ref pDeployLambda, true]
   cDeploySMSAlerts:
-    !Equals [ !Ref pEnableSubscriberSMS, yes]
+    !Equals [ !Ref pEnableSubscriberSMS, true]
 
 Resources:
   SNSAlertsNigthmare:
