@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: Deploy SNS Notification Topics and Alarms for Generic Account Notification
+Description: Generic SNS Notification Topics and Alarms
 
 Parameters:
   pAccountDescription:
